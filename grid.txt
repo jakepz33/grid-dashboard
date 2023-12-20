@@ -1,0 +1,28 @@
+BODY and HTML sizing
+body:
+     - min-height: 90vh; /*set min height for body to allow for grow
+     - not setting width - could cause horizontal scroll bar.
+     - if you want to set body as a smaller container, you can set a max
+     width value on the body.
+
+html:
+    - no sizing added to html as it naturally fills 100vh and vw
+
+Media Querires
+- @media only screen and (max-width: 768px) {} - this is for applying css
+    when screen is 768 or lower
+- @ media only screen and (min-width: 768px) {} - applied when screen greater than
+
+- Common breakpoints: 480, 768, 1024, and 1280px
+
+- Design for Mobile first, instead of changing styles when width gets smaller that 
+    768px, we should change when the width gets larger that 768px.
+
+
+Grid Notes
+    - grid-template-columns : sets the number of columns wanted. px or fr
+
+Positoning Notes
+    - Position relative and absolute
+        - set the parent positon: relative; and set child position: absolute;
+        - for child: top: 50%; transoform: translateY(-50%); to center vertically
