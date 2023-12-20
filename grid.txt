@@ -26,3 +26,19 @@ Positoning Notes
     - Position relative and absolute
         - set the parent positon: relative; and set child position: absolute;
         - for child: top: 50%; transoform: translateY(-50%); to center vertically
+
+Setting navIcons 
+    - used display inline-block for parent container. and for parent container and child elements I used "vertical-align: middle" to place the icon directly in the middle of its parent div and next to the label next to it.
+
+    <div style="display: inline-block; vertical-align: middle">
+              <img
+                style="position: relative; vertical-align: middle"
+                src="images/grid (2).svg"
+              />
+              <p
+                style="display: inline; vertical-align: middle; color: #7752fe"
+              >
+                Overview
+              </p>
+            </div>
+

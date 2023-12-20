@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="searchBar.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -130,8 +131,46 @@
         </div>
       </div>
 
-      <div class="grid-item search-item">Search bar</div>
-      <div class="grid-item content-item">Main content</div>
+      <!-- SEARCH BAR -->
+      <div class="grid-item search-item">
+        <div class="menuItem">
+          <div style="color: #7752fe">Dashboard</div>
+          <div>Order</div>
+          <div>Account</div>
+          <div>Payments</div>
+          <div>Transaction</div>
+          <div>Settings</div>
+        </div>
+        <div class="login-info">
+          <div class="move-right">
+            <div class="notification-chat">
+              <div class="notification-icon-background">
+                <div
+                  style="background-color: white; border-radius: 15px"
+                  class="notification-icons"
+                >
+                  <img src="/images/bell.svg" />
+                </div>
+                <div class="notification-icons">
+                  <img src="/images/message-circle.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="profile-pic">
+              <div class="pic-span">
+                <!-- <div class="defaultProfile"></div> -->
+                <img style="height: 35px" src="/images/account-circle.svg" />
+              </div>
+              <div style="font-size: 18px">Hi, Peter Parker</div>
+              <div style="font-size: 14px">spideyNYC@gmail.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item content-item">
+        <div class="notification-chat"></div>
+        <div class="profile-pic"></div>
+      </div>
     </div>
   </body>
 </html>

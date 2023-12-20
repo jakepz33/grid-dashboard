@@ -185,9 +185,11 @@ html {
     min-height: 500px;
     overflow-y: auto; /* Scroll bar for this item*/
   }
-  .search-item {
+  /* .search-item {
     border: 2px solid purple;
-  }
+  } */
+
+  /* SEARCH BAR CSS */
 }
 
 @media only screen and (max-width: 1200px) {
