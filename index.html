@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="searchBar.css" />
+    <link rel="stylesheet" type="text/css" href="content.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -146,7 +147,11 @@
             <div class="notification-chat">
               <div class="notification-icon-background">
                 <div
-                  style="background-color: white; border-radius: 15px"
+                  style="
+                    background-color: white;
+                    border-radius: 15px;
+                    height: 20px;
+                  "
                   class="notification-icons"
                 >
                   <img src="/images/bell.svg" />
@@ -162,14 +167,38 @@
                 <img style="height: 35px" src="/images/account-circle.svg" />
               </div>
               <div style="font-size: 18px">Hi, Peter Parker</div>
-              <div style="font-size: 14px">spideyNYC@gmail.com</div>
+              <div style="font-size: 14px">spideynyc@gmail.com</div>
             </div>
           </div>
         </div>
       </div>
       <div class="grid-item content-item">
-        <div class="notification-chat"></div>
-        <div class="profile-pic"></div>
+        <div class="content-grid sales-report" id="sales-report">
+          <div>Sales Report Overview</div>
+          <div class="refresh-item">
+            <div class="refresh-icon">
+              <img src="images/content-images/clock (1).svg" alt="" />
+            </div>
+            <div class="view-customize">
+              <img src="images/content-images/edit-3.svg" />
+              <p style="font-size: 12px">View Customize</p>
+            </div>
+          </div>
+          <div class="restart-item">
+            <div class="refresh-icon">
+              <img src="/images/content-images/calendar.svg" />
+            </div>
+            <div class="view-customize">
+              <img src="images/content-images/refresh-cw.svg" />
+              <p style="font-size: 12px">Restart Data</p>
+            </div>
+          </div>
+        </div>
+        <div class="content-grid sales-revenue">Sales Revenue</div>
+        <div class="content-grid top-product">Top Product</div>
+        <div class="content-grid top-sales-item">Top Item Sales</div>
+        <div class="content-grid top-market-demand">Top Market Demand</div>
+        <div class="content-grid cost-breakdown">Cost Breakdown</div>
       </div>
     </div>
   </body>

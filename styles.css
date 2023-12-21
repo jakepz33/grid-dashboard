@@ -181,9 +181,11 @@ html {
     font-size: 1.6rem;
   }
   .content-item {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     min-height: 500px;
     overflow-y: auto; /* Scroll bar for this item*/
+    background-color: var(--main-grey);
+    border-radius: 15px 0 0 0;
   }
   /* .search-item {
     border: 2px solid purple;
