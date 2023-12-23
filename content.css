@@ -3,8 +3,8 @@
     display: grid;
     grid-template: 60px 3fr 2fr 2fr / 1fr 1fr 1fr 1fr;
     gap: 20px;
-    padding-right: 10px;
-    padding-left: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
     padding-bottom: 30px;
   }
   .content-grid {
@@ -78,5 +78,72 @@
     flex-direction: row;
     justify-content: right;
     gap: 5px;
+  }
+
+  /* Sales Revenue Container */
+  .sales-revenue {
+    display: grid;
+    padding: 15px 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .sales-revenue-first-child {
+    display: grid;
+    grid-template-rows: 30% 70%;
+  }
+  .overview-description {
+    font-size: 12px;
+    margin-top: 2px;
+    margin-bottom: 15px;
+  }
+  .see-details {
+    margin-bottom: 2px;
+    margin-top: 0;
+    font-size: 14px;
+    border: 1px solid #121212;
+    width: 30%;
+    text-align: center;
+    border-radius: 15px;
+  }
+  .first-child-top {
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .forty-five-k-img > p {
+    margin-bottom: 2px;
+    margin-top: 5px;
+    font-size: 25px;
+  }
+  .forty-five-k {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .forty-five-k-img p{
+    font-size: 65px;
+    font-weight: 600;
+  }
+  /* TODAY RECEIVED */
+  .received {
+    position: relative;
+  }
+  .backdrop1 {
+    position: absolute;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    background-color: #536878;
+    border-radius: 15px;
+  }
+  .backdrop-content {
+    width: 100%;
+    background-color: #36454f;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
   }
 }
