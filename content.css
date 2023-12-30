@@ -1,3 +1,12 @@
+:root {
+  --main-grey: #eeeeee;
+  --main-white: #ffffff;
+  --main-font: "Roboto", sans-serif;
+  --purple: #7752fe;
+  --black: #121212;
+  --grey-text: #808080;
+}
+
 @media only screen and (min-width: 992px) {
   .content-item {
     display: grid;
@@ -89,36 +98,53 @@
   .sales-revenue-first-child {
     display: grid;
     grid-template-rows: 30% 70%;
+    padding-left: 15px;
   }
   .overview-description {
     font-size: 12px;
     margin-top: 2px;
     margin-bottom: 15px;
+    color: var(--grey-text);
   }
   .see-details {
     margin-bottom: 2px;
     margin-top: 0;
     font-size: 14px;
-    border: 1px solid #121212;
-    width: 30%;
+    border: 2px solid var(--main-grey); /*needs to be changed to darker*/
+    width: 50%;
     text-align: center;
     border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: var(--grey-text);
   }
   .first-child-top {
     /* border: 2px solid blue; */
     font-size: 20px;
     font-weight: 500;
+    padding-top: 5%;
   }
   .forty-five-k-img > p {
     margin-bottom: 2px;
     margin-top: 5px;
-    font-size: 25px;
+    /* font-size: 25px; */
   }
-  .forty-five-k {
+  .forty-five-k-img p,
+  .forty-five-k-img img {
     display: inline-block;
     vertical-align: middle;
   }
-  .forty-five-k-img p{
+
+  .forty-five-k {
+    position: relative;
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+  }
+  .move-bottom {
+    position: absolute;
+    bottom: 5%;
+  }
+  .forty-five-k-img p {
     font-size: 65px;
     font-weight: 600;
   }
@@ -128,7 +154,7 @@
   }
   .backdrop1 {
     position: absolute;
-    height: 100%;
+    height: 90%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -139,11 +165,42 @@
   .backdrop-content {
     width: 100%;
     background-color: #36454f;
-    height: 90%;
+    height: 85%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .backdrop-content div {
+    color: var(--main-white);
+  }
+  .backdrop-content > div:nth-child(2) {
+    font-size: 35px;
+    font-weight: 400;
+  }
+  .backdrop-content-3rd {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .twelve-percent p,
+  .twelve-percent img {
+    display: inline-block;
+  }
+  .twelve-percent img {
+    padding-left: 2px;
+  }
+  .received-icon-background {
+    background-color: #536878;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px;
     border-radius: 15px;
   }
 }
